@@ -55,6 +55,7 @@ module.exports = {
         year: '2018',
       },
       duration: null,
+      location: 'UK - Remote',
       occupation: 'Lead Frontend Developer',
       description:
         'I joined the company as one of the main developers, leading the frontend and mobile app development and helping with the architecture and coordination of the backend and blokchain teams.',
@@ -66,6 +67,7 @@ module.exports = {
         year: '2015',
       },
       duration: '2 years and 7 months',
+      location: 'London, UK',
       occupation: 'Senior Developer',
       description:
         'I joined the company as one of the first 5 employees, I have been involved in all technical areas (backend, frontend, db, devops, bi) but with a higher responsibility on frontend, which I was leading inside the team',
@@ -77,6 +79,7 @@ module.exports = {
         year: '2013',
       },
       duration: '2 years',
+      location: 'London, UK',
       occupation: 'Software developer',
       description:
         'Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool.',
@@ -88,6 +91,7 @@ module.exports = {
         year: '2012',
       },
       duration: '1 years',
+      location: 'Majorca, Spain',
       occupation: 'Software developer',
       description:
         'Member of a team in charge to create a new website to sell complementary holidays tickets and excursions, integrated inside the existing booking engine.',
@@ -99,6 +103,7 @@ module.exports = {
         year: '2012',
       },
       duration: '7 months',
+      location: 'Majorca, Spain',
       occupation: 'Junior developer',
       description:
         'Working in a team for a third party company as a development house, in charge of their intranet site to manage all the information about new customers, employees, keep the stock up to date and some other small applications.',
@@ -110,6 +115,7 @@ module.exports = {
         year: '2010',
       },
       duration: '3 months',
+      location: 'Majorca, Spain',
       occupation: 'Intern developer',
       description:
         'Summer internship, Working with the company intranet site, creating new features and fixing some of the existing bugs.',
@@ -121,6 +127,7 @@ module.exports = {
         year: '2009',
       },
       duration: '3 months',
+      location: 'Majorca, Spain',
       occupation: 'Intern developer',
       description:
         'Summer internship, Working with the company intranet site, creating new features and fixing some of the existing bugs.',
