@@ -4,14 +4,18 @@ import { Container, Row, Col } from 'react-awesome-styled-grid'
 import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa'
 import siteConfig from '../../data/siteConfig'
 
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import SEO from '../components/SEO'
-import Wrapper from '../components/wrapper'
-import About from '../components/about'
-import Skills from '../components/skills'
-import Timeline from '../components/timeline'
-import Repositories from '../components/repositories'
+import {
+  Layout,
+  Hero,
+  SEO,
+  Wrapper,
+  About,
+  Skills,
+  Timeline,
+  Education,
+  Publications,
+  Repositories,
+} from '../components'
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -90,8 +94,12 @@ class Home extends React.Component {
             </Row>
             <Separator />
             <Timeline />
+            {/* <Separator />
+            <Repositories /> */}
             <Separator />
-            <Repositories />
+            <Publications />
+            <Separator />
+            <Education />
           </Container>
         </Wrapper>
       </Layout>

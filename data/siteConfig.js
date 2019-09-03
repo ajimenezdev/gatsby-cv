@@ -133,6 +133,39 @@ module.exports = {
         'Summer internship, Working with the company intranet site, creating new features and fixing some of the existing bugs.',
     },
   ],
+  publications: [
+    {
+      title: 'React Native intermediate level',
+      company_medium: 'OpenWebinars',
+      date: {
+        month: 'jun',
+        year: '2019',
+      },
+      link: 'https://openwebinars.net/cursos/react-native-intermedio/',
+      description:
+        'Online training recorded for spanish e-learning platform. The training is for developers who know a little bit of ReactNative and wants to learn more about the platform',
+    },
+    {
+      title: 'React Native for beginners',
+      company_medium: 'OpenWebinars',
+      date: {
+        month: 'jun',
+        year: '2019',
+      },
+      link: 'https://openwebinars.net/cursos/react-native-principiantes/',
+      description:
+        'Online training recorded for spanish e-learning platform. The training is for JS developers willing to learn the basics of ReactNative',
+    },
+  ],
+  education: [
+    {
+      school: 'University of Balearic Islands',
+      degree: 'Bachelor degree',
+      field: 'Software Engineering',
+      startYear: 2006,
+      endYear: 2011,
+    },
+  ],
   social: {
     twitter: 'https://twitter.com/ajimenezdev/',
     linkedin: 'https://www.linkedin.com/in/alvarojimenezmartin/',
