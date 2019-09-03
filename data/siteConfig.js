@@ -166,6 +166,20 @@ module.exports = {
       endYear: 2011,
     },
   ],
+  languages: [
+    {
+      language: 'Spanish',
+      level: 'Native tongue',
+    },
+    {
+      language: 'Catalan',
+      level: 'Native tongue',
+    },
+    {
+      language: 'English',
+      level: 'Fluid Written & Spoken',
+    },
+  ],
   social: {
     twitter: 'https://twitter.com/ajimenezdev/',
     linkedin: 'https://www.linkedin.com/in/alvarojimenezmartin/',

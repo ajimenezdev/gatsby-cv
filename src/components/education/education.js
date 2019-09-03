@@ -25,6 +25,18 @@ const Education = ({ className }) => {
               {idx < siteConfig.education.length - 1 && <hr />}
             </React.Fragment>
           ))}
+        {siteConfig.languages && (
+          <React.Fragment>
+            <h3>Languages</h3>
+            <ul>
+              {siteConfig.languages.map(({ language, level }) => (
+                <li>
+                  <strong>{language}:</strong> {level}.
+                </li>
+              ))}
+            </ul>
+          </React.Fragment>
+        )}
       </div>
     </div>
   )
