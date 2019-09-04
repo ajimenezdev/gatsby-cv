@@ -9,6 +9,7 @@ import Repositories from './repositories'
 import Publications from './publications'
 import Education from './education'
 import Hobbies from './hobbies'
+import Contact from './contact'
 
 export {
   Layout,
@@ -22,4 +23,5 @@ export {
   Education,
   Repositories,
   Hobbies,
+  Contact,
 }
