@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaUniversity } from 'react-icons/fa'
+import { FlagIcon } from 'react-flag-kit'
 import SectionTitle from '../sectionTitle'
 import siteConfig from '../../../data/siteConfig'
 
@@ -34,9 +35,22 @@ const Education = ({ className }) => {
           <React.Fragment>
             <h3>Languages</h3>
             <ul>
-              {siteConfig.languages.map(({ language, level }) => (
+              {siteConfig.languages.map(({ code, language, level }) => (
                 <li>
-                  <strong>{language}:</strong> {level}.
+                  <div className="education__lang">
+                    {code && (
+                      <FlagIcon
+                        className="education__lang__flag"
+                        code={code}
+                        size={18}
+                      />
+                    )}
+                    <div
+                      className={code ? '' : 'education__lang__text--noflag'}
+                    >
+                      <strong>{language}:</strong> {level}.
+                    </div>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -72,5 +86,16 @@ export default styled(Education)`
   .education__edu-studies {
     font-size: 16px;
     font-style: italic;
+  }
+  .education__lang {
+    display: flex;
+    align-items: center;
+  }
+  .education__lang__flag {
+    margin: 0;
+    margin-right: 6px;
+  }
+  .education__lang__text--noflag {
+    margin-left: 24px;
   }
 `

@@ -170,6 +170,7 @@ module.exports = {
     {
       language: 'Spanish',
       level: 'Native tongue',
+      code: 'ES',
     },
     {
       language: 'Catalan',
@@ -178,6 +179,7 @@ module.exports = {
     {
       language: 'English',
       level: 'Fluid Written & Spoken',
+      code: 'GB',
     },
   ],
   social: {
