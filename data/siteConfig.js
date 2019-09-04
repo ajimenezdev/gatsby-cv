@@ -186,6 +186,28 @@ module.exports = {
     github: 'https://github.com/ajimenezdev/',
     email: 'ajmjimens@gmail.com',
   },
+  hobbies: [
+    {
+      name: 'Football',
+      icon: 'FaFutbol',
+    },
+    {
+      name: 'Photography',
+      icon: 'FaCamera',
+    },
+    {
+      name: 'Hiking',
+      icon: 'FaHiking',
+    },
+    {
+      name: 'Traveling',
+      icon: 'FaPlane',
+    },
+    {
+      name: 'Movies & Series',
+      icon: 'FaTv',
+    },
+  ],
   siteUrl: 'https://alvarojimenezmartin.com',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
@@ -221,7 +243,7 @@ module.exports = {
     },
     {
       label: 'Hobbies',
-      url: 'hobby',
+      url: 'hobbies',
     },
     {
       label: 'Contact',

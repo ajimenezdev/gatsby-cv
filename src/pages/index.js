@@ -15,6 +15,7 @@ import {
   Education,
   Publications,
   Repositories,
+  Hobbies,
 } from '../components'
 
 const Separator = styled.hr`
@@ -100,6 +101,8 @@ class Home extends React.Component {
             <Publications />
             <Separator />
             <Education />
+            <Separator />
+            <Hobbies />
           </Container>
         </Wrapper>
       </Layout>
