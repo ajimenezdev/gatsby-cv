@@ -1,12 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { config } from 'react-awesome-styled-grid'
+import { FaSuitcase } from 'react-icons/fa'
+import SectionTitle from '../sectionTitle'
 import siteConfig from '../../../data/siteConfig'
 
 const Timeline = ({ className }) => {
   return (
     <div className={className}>
-      <h1>Experience</h1>
+      <SectionTitle
+        title="Experience"
+        name="experience"
+        icon={<FaSuitcase size={28} />}
+      />
       {siteConfig.jobs &&
         siteConfig.jobs.map(job => (
           <article

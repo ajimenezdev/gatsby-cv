@@ -1,12 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { config } from 'react-awesome-styled-grid'
+import { FaBook } from 'react-icons/fa'
+import SectionTitle from '../sectionTitle'
 import siteConfig from '../../../data/siteConfig'
 
 const Publications = ({ className }) => {
   return (
     <div className={className}>
-      <h1>Publications</h1>
+      <SectionTitle
+        title="Publications"
+        name="publications"
+        icon={<FaBook size={28} />}
+      />
       <div className="publications__content">
         {siteConfig.publications &&
           siteConfig.publications.map((pub, idx) => (

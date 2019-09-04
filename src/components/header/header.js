@@ -1,8 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import { FaGithub } from "react-icons/fa"
+import { FaHome, FaBars } from 'react-icons/fa'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import siteConfig from '../../../data/siteConfig'
+const { headerLinks } = siteConfig
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -12,7 +13,7 @@ const HeaderWrapper = styled.header`
   display: block;
   width: 100%;
   z-index: 1000;
-  background-color: #25303B;
+  background-color: #25303b;
 `
 
 const HeaderNav = styled.nav`
@@ -26,13 +27,13 @@ const HeaderNav = styled.nav`
   justify-content: space-between;
   overflow-x: auto;
   overflow-y: hidden;
-  background-color: #25303B;
+  background-color: #25303b;
 `
 
 const HeaderLinkGroup = styled.div`
   display: flex;
   flex-direction: row;
-` 
+`
 
 const HeaderLink = styled(Link)`
   position: relative;
@@ -47,49 +48,106 @@ const HeaderLink = styled(Link)`
   padding-right: 20px;
   min-width: 42px;
   z-index: 10;
-`
-const GithubLink = styled(({ className }) => (
-  <a 
-    className={className}
-    href={`https://github.com/${siteConfig.githubUsername}`}
-    target='_blank'
-    rel="noopener noreferrer"
-  >
-    <FaGithub size={32} />
-  </a>
-))`
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  border: 0;
-  margin: 0;
-  margin-right: 0.5rem;
-  padding-left: 20px;
-  padding-right: 20px;
-  min-width: 42px;
-  z-index: 10;
-`
-
-class Header extends React.Component {
-  render () {
-    const { headerLinks } = siteConfig
-
-    return (
-      <HeaderWrapper>
-        <HeaderNav>
-          <HeaderLinkGroup>
-            {headerLinks.map((headerLink, i) => (
-              <HeaderLink to={headerLink.url} key={`header-link-${i}`}>
-                {headerLink.label}
-              </HeaderLink>
-            ))}
-          </HeaderLinkGroup>
-          <GithubLink />
-        </HeaderNav>
-      </HeaderWrapper>
-    )
+  cursor: pointer;
+  @media (max-width: 900px) {
+    padding: 14px;
   }
+`
+// const GithubLink = styled(({ className }) => (
+//   <a
+//     className={className}
+//     href={`https://github.com/${siteConfig.githubUsername}`}
+//     target="_blank"
+//     rel="noopener noreferrer"
+//   >
+//     <FaGithub size={32} />
+//   </a>
+// ))`
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   color: #fff;
+//   border: 0;
+//   margin: 0;
+//   margin-right: 0.5rem;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   min-width: 42px;
+//   z-index: 10;
+// `
+
+const Header = ({ className }) => {
+  const [toggled, setToggled] = useState(false)
+  return (
+    <HeaderWrapper className={className}>
+      <HeaderNav className="header">
+        <FaHome
+          size={32}
+          className="header__homeIcon"
+          onClick={() => scroll.scrollToTop()}
+        />
+        <HeaderLinkGroup
+          className={`header__LinkGroup ${
+            toggled ? 'header__LinkGroup-toggled' : ''
+          }`}
+        >
+          {headerLinks.map((headerLink, i) => (
+            <HeaderLink
+              smooth={true}
+              to={headerLink.url}
+              offset={-70}
+              key={`header-link-${i}`}
+            >
+              {headerLink.label}
+            </HeaderLink>
+          ))}
+        </HeaderLinkGroup>
+        <div className="header__smallScreen">
+          <FaBars
+            size={32}
+            className="header__smallScreen__menuIcon"
+            onClick={() => setToggled(!toggled)}
+          />
+        </div>
+      </HeaderNav>
+    </HeaderWrapper>
+  )
 }
 
-export default Header
+export default styled(Header)`
+  .header {
+    display: flex;
+    /* align-items: center; */
+  }
+  .header__smallScreen {
+    display: none;
+  }
+  .header__homeIcon {
+    color: white;
+    cursor: pointer;
+    margin: 16px;
+  }
+  @media (max-width: 900px) {
+    .header {
+      height: auto;
+    }
+    .header__LinkGroup {
+      display: none;
+    }
+    .header__LinkGroup-toggled {
+      display: flex;
+      flex-direction: column;
+      margin-top: 56px;
+      flex: 1;
+    }
+    .header__smallScreen {
+      display: flex;
+      justify-content: flex-end;
+      margin: 16px;
+    }
+    .header__smallScreen__menuIcon {
+      color: white;
+      cursor: pointer;
+    }
+  }
+`

@@ -1,12 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { config } from 'react-awesome-styled-grid'
+import { FaUniversity } from 'react-icons/fa'
+import SectionTitle from '../sectionTitle'
 import siteConfig from '../../../data/siteConfig'
 
 const Education = ({ className }) => {
   return (
     <div className={className}>
-      <h1>Education</h1>
+      <SectionTitle
+        title="Education"
+        name="education"
+        icon={<FaUniversity size={28} />}
+      />
       <div className="education__content">
         {siteConfig.education &&
           siteConfig.education.map((edu, idx) => (
