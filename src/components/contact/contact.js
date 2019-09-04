@@ -17,9 +17,9 @@ const Contact = ({ className }) => {
       <div className="contact__content">
         <form
           name="contact-form"
-          method="post"
+          method="POST"
           className="contact__form"
-          netlify
+          data-netlify="true"
         >
           <div className="contact__form__item">
             <label for="name" className="contact__form__label">
@@ -33,6 +33,7 @@ const Contact = ({ className }) => {
             </label>
             <select
               value={category}
+              name="category"
               onChange={event => setCategory(event.target.value)}
             >
               <option value="" disabled>
@@ -88,7 +89,7 @@ const Contact = ({ className }) => {
             </label>
             <textarea rows="4" cols="50" name="message" />
           </div>
-          <button>Send</button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
