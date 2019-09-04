@@ -53,28 +53,6 @@ const HeaderLink = styled(Link)`
     padding: 14px;
   }
 `
-// const GithubLink = styled(({ className }) => (
-//   <a
-//     className={className}
-//     href={`https://github.com/${siteConfig.githubUsername}`}
-//     target="_blank"
-//     rel="noopener noreferrer"
-//   >
-//     <FaGithub size={32} />
-//   </a>
-// ))`
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   color: #fff;
-//   border: 0;
-//   margin: 0;
-//   margin-right: 0.5rem;
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   min-width: 42px;
-//   z-index: 10;
-// `
 
 const Header = ({ className }) => {
   const [toggled, setToggled] = useState(false)
@@ -97,6 +75,7 @@ const Header = ({ className }) => {
               to={headerLink.url}
               offset={-70}
               key={`header-link-${i}`}
+              onClick={() => setToggled(false)}
             >
               {headerLink.label}
             </HeaderLink>
