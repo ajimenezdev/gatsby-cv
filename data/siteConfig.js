@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: "Hi! I'm Alvaro!",
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
+  siteDescription: `This is my personal website`,
   keyWords: ['gatsbyjs', 'react', 'curriculum'],
   authorName: 'Alvaro Jimenez',
   twitterUsername: 'ajimenezdev',
@@ -217,7 +217,7 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: '/favicon.ico',
   resume: '/resume_alvaro_jimenez.pdf',
   headerLinks: [
     // {
