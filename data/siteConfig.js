@@ -12,23 +12,23 @@ module.exports = {
   skills: [
     {
       name: 'HTML',
-      level: 80,
+      level: 90,
     },
     {
       name: 'CSS',
-      level: 60,
+      level: 85,
     },
     {
       name: 'Javascript',
-      level: 80,
+      level: 90,
     },
     {
       name: 'React',
-      level: 75,
+      level: 85,
     },
     {
       name: 'ReactNative',
-      level: 70,
+      level: 80,
     },
     {
       name: 'NodeJs',
@@ -36,7 +36,7 @@ module.exports = {
     },
     {
       name: 'Git',
-      level: 70,
+      level: 75,
     },
     {
       name: 'Bitcoin',
