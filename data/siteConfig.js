@@ -217,7 +217,7 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: '/favicon.ico',
+  icon: 'src/assets/favicon.jpg',
   resume: '/resume_alvaro_jimenez.pdf',
   headerLinks: [
     // {
