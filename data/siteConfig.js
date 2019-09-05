@@ -218,6 +218,7 @@ module.exports = {
   theme_color: '#25303B',
   display: 'minimal-ui',
   icon: 'src/assets/gatsby-icon.png',
+  resume: '/resume_alvaro_jimenez.pdf',
   headerLinks: [
     // {
     //   label: 'Alvaro Jimenez Martin',

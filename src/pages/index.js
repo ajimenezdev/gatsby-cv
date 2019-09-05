@@ -1,7 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaTwitter,
+  FaFileAlt,
+} from 'react-icons/fa'
 import siteConfig from '../../data/siteConfig'
 
 import {
@@ -55,6 +61,8 @@ class Home extends React.Component {
                     <a
                       className="social-link github"
                       href={siteConfig.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaGithub className="social-icon" size="32" />
                     </a>
@@ -63,6 +71,8 @@ class Home extends React.Component {
                     <a
                       className="social-link linkedin"
                       href={siteConfig.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaLinkedin className="social-icon" size="32" />
                     </a>
@@ -71,6 +81,8 @@ class Home extends React.Component {
                     <a
                       className="social-link twitter"
                       href={siteConfig.social.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaTwitter className="social-icon" size="32" />
                     </a>
@@ -79,8 +91,20 @@ class Home extends React.Component {
                     <a
                       className="social-link email"
                       href={`mailto:${siteConfig.social.email}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaEnvelope className="social-icon" size="32" />
+                    </a>
+                  )}
+                  {siteConfig.resume && (
+                    <a
+                      className="social-link resume"
+                      href={`${siteConfig.resume}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaFileAlt className="social-icon" size="28" />
                     </a>
                   )}
                 </div>
@@ -134,6 +158,9 @@ export default styled(Home)`
   .social {
     margin-top: 12px;
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .social-link {
@@ -155,5 +182,9 @@ export default styled(Home)`
 
   a.social-link.email:hover {
     color: #c23a2b;
+  }
+
+  a.social-link.resume:hover {
+    color: #40c22b;
   }
 `
