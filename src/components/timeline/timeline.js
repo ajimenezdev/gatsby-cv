@@ -109,6 +109,7 @@ export default styled(Timeline)`
   }
   .timeline__title:after {
     content: '';
+    display: none;
     position: absolute;
     top: -5px;
     left: 30%;
@@ -150,6 +151,7 @@ export default styled(Timeline)`
   }
 
   .timeline__item div.inner h2:after {
+    display: block;
     top: 20px;
     left: unset;
     right: -5px;

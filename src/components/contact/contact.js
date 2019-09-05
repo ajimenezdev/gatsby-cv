@@ -5,7 +5,6 @@ import SectionTitle from '../sectionTitle'
 
 const Contact = ({ className }) => {
   const [category, setCategory] = useState('')
-  const [jobType, setJobType] = useState('')
 
   return (
     <div className={className}>
@@ -22,13 +21,13 @@ const Contact = ({ className }) => {
           data-netlify="true"
         >
           <div className="contact__form__item">
-            <label for="name" className="contact__form__label">
+            <label htmlFor="name" className="contact__form__label">
               Name:
             </label>
             <input type="text" placeholder="name" name="name" />
           </div>
           <div className="contact__form__item">
-            <label for="category" className="contact__form__label">
+            <label htmlFor="category" className="contact__form__label">
               Category:
             </label>
             <select
@@ -46,7 +45,7 @@ const Contact = ({ className }) => {
           </div>
           {category === 'training' && (
             <div className="contact__form__item">
-              <label for="location" className="contact__form__label">
+              <label htmlFor="location" className="contact__form__label">
                 Location:
               </label>
               <input type="text" placeholder="location" name="location" />
@@ -54,23 +53,17 @@ const Contact = ({ className }) => {
           )}
           {category === 'job' && (
             <div className="contact__form__item">
-              <label for="job_type" className="contact__form__label">
+              <label htmlFor="job_type" className="contact__form__label">
                 Job type:
               </label>
               <div className="contact__form_radioContainer">
-                <label for="perm" className="contact__form_radioLabel">
+                <label htmlFor="perm" className="contact__form_radioLabel">
                   Permanent
                 </label>
-                <input
-                  type="radio"
-                  id="perm"
-                  name="job_type"
-                  value="perm"
-                  onClick={() => setJobType('perm')}
-                />
+                <input type="radio" id="perm" name="job_type" value="perm" />
               </div>
               <div className="contact__form_radioContainer">
-                <label for="contract" className="contact__form_radioLabel">
+                <label htmlFor="contract" className="contact__form_radioLabel">
                   Contract
                 </label>
                 <input
@@ -78,13 +71,12 @@ const Contact = ({ className }) => {
                   id="contract"
                   name="job_type"
                   value="contract"
-                  onClick={() => setJobType('contract')}
                 />
               </div>
             </div>
           )}
           <div className="contact__form__item">
-            <label for="message" className="contact__form__label">
+            <label htmlFor="message" className="contact__form__label">
               Message:
             </label>
             <textarea rows="4" cols="50" name="message" />

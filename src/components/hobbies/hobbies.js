@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import RIcon from 'react-icons/fa'
 import { FaCoffee } from 'react-icons/fa'
 import SectionTitle from '../sectionTitle'
 import siteConfig from '../../../data/siteConfig'
@@ -18,7 +17,7 @@ const Hobbies = ({ className }) => {
           siteConfig.hobbies.map(hobby => {
             const icon = require('react-icons/fa')[hobby.icon]
             return (
-              <div className="hobbies_item">
+              <div className="hobbies_item" key={hobby.name}>
                 {React.createElement(icon, { size: 32 })}
                 <span>{hobby.name}</span>
               </div>

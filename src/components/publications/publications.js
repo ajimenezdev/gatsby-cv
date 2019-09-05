@@ -16,7 +16,7 @@ const Publications = ({ className }) => {
         {siteConfig.publications &&
           siteConfig.publications.map((pub, idx) => (
             <React.Fragment key={pub.title}>
-              <publication className="publications_pub">
+              <div className="publications_pub">
                 <div className="publications_pub-header">
                   <span className="publications__pub-title">{pub.title}</span>
                   <span className="publications__pub-date">
@@ -32,11 +32,12 @@ const Publications = ({ className }) => {
                 <a
                   href={pub.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="publications__pub-link"
                 >
                   {pub.link}
                 </a>
-              </publication>
+              </div>
               {idx < siteConfig.publications.length - 1 && <hr />}
             </React.Fragment>
           ))}

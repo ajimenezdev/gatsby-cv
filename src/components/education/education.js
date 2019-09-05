@@ -16,7 +16,7 @@ const Education = ({ className }) => {
       <div className="education__content">
         {siteConfig.education &&
           siteConfig.education.map((edu, idx) => (
-            <React.Fragment key={edu.title}>
+            <React.Fragment key={`${edu.field}_${edu.degree}`}>
               <div className="education__edu">
                 <div className="education__edu-header">
                   <span className="education__edu-school">{edu.school}</span>
@@ -36,7 +36,7 @@ const Education = ({ className }) => {
             <h3>Languages</h3>
             <ul>
               {siteConfig.languages.map(({ code, language, level }) => (
-                <li>
+                <li key={`${code}-${language}`}>
                   <div className="education__lang">
                     {code && (
                       <FlagIcon

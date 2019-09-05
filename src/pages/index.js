@@ -20,9 +20,8 @@ import {
   Timeline,
   Education,
   Publications,
-  Repositories,
   Hobbies,
-  Contact,
+  // Contact,
 } from '../components'
 
 const Separator = styled.hr`
@@ -42,97 +41,99 @@ class Home extends React.Component {
     const title = siteConfig.siteTitle
     const { keywords } = siteConfig
     return (
-      <Layout location={this.props.location}>
-        <SEO title={title} keywords={keywords} />
+      <div className={this.props.className}>
+        <Layout location={this.props.location}>
+          <SEO title={title} keywords={keywords} />
 
-        <Hero heroImg={siteConfig.siteCover} title={title} />
+          <Hero heroImg={siteConfig.siteCover} title={title} />
 
-        <Wrapper className={this.props.className}>
-          <Container className="page-content" fluid>
-            <Row>
-              <Col xs={4} className="avatar">
-                <img
-                  className="avatar__image"
-                  src="/images/avatar.jpg"
-                  alt="user avatar"
-                />
-                <div className="social">
-                  {siteConfig.social.github && (
-                    <a
-                      className="social-link github"
-                      href={siteConfig.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithub className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.linkedin && (
-                    <a
-                      className="social-link linkedin"
-                      href={siteConfig.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaLinkedin className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.twitter && (
-                    <a
-                      className="social-link twitter"
-                      href={siteConfig.social.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaTwitter className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.social.email && (
-                    <a
-                      className="social-link email"
-                      href={`mailto:${siteConfig.social.email}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaEnvelope className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {siteConfig.resume && (
-                    <a
-                      className="social-link resume"
-                      href={`${siteConfig.resume}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaFileAlt className="social-icon" size="28" />
-                    </a>
-                  )}
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col xs={4} sm={4}>
-                <About title="About" text={siteConfig.authorDescription} />
-              </Col>
-              <Col xs={4} sm={4}>
-                <Skills title="Skills" skills={siteConfig.skills} />
-              </Col>
-            </Row>
-            <Separator />
-            <Timeline />
-            {/* <Separator />
+          <Wrapper className={this.props.className}>
+            <Container className="page-content" fluid>
+              <Row>
+                <Col xs={4} className="avatar">
+                  <img
+                    className="avatar__image"
+                    src="/images/avatar.jpg"
+                    alt="user avatar"
+                  />
+                  <div className="social">
+                    {siteConfig.social.github && (
+                      <a
+                        className="social-link github"
+                        href={siteConfig.social.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub className="social-icon" size="32" />
+                      </a>
+                    )}
+                    {siteConfig.social.linkedin && (
+                      <a
+                        className="social-link linkedin"
+                        href={siteConfig.social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaLinkedin className="social-icon" size="32" />
+                      </a>
+                    )}
+                    {siteConfig.social.twitter && (
+                      <a
+                        className="social-link twitter"
+                        href={siteConfig.social.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaTwitter className="social-icon" size="32" />
+                      </a>
+                    )}
+                    {siteConfig.social.email && (
+                      <a
+                        className="social-link email"
+                        href={`mailto:${siteConfig.social.email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaEnvelope className="social-icon" size="32" />
+                      </a>
+                    )}
+                    {siteConfig.resume && (
+                      <a
+                        className="social-link resume"
+                        href={`${siteConfig.resume}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaFileAlt className="social-icon" size="28" />
+                      </a>
+                    )}
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={4} sm={4}>
+                  <About title="About" text={siteConfig.authorDescription} />
+                </Col>
+                <Col xs={4} sm={4}>
+                  <Skills title="Skills" skills={siteConfig.skills} />
+                </Col>
+              </Row>
+              <Separator />
+              <Timeline />
+              {/* <Separator />
             <Repositories /> */}
-            <Separator />
-            <Publications />
-            <Separator />
-            <Education />
-            <Separator />
-            <Hobbies />
-            <Separator />
-            <Contact />
-          </Container>
-        </Wrapper>
-      </Layout>
+              <Separator />
+              <Publications />
+              <Separator />
+              <Education />
+              <Separator />
+              <Hobbies />
+              <Separator />
+              {/* <Contact /> */}
+            </Container>
+          </Wrapper>
+        </Layout>
+      </div>
     )
   }
 }
