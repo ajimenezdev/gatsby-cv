@@ -1,18 +1,14 @@
-[![Build Status](https://travis-ci.org/santosfrancisco/gatsby-starter-cv.svg?branch=master)](https://travis-ci.org/santosfrancisco/gatsby-starter-cv)
-[![GitHub version](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv.svg)](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's CV starter
+  Online Resume
 </h1>
 
-Create your resume in a few minutes with this totally responsive starter using React. Show off your skills, work experiences and activities in github.
-
+Online cv created based on this template: [gatsby-starter-cv](https://github.com/santosfrancisco/gatsby-starter-cv)
+Template changed to include navigation bar and some extra sections and data
 
 ## 📷 Preview
 
@@ -26,7 +22,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 
     ```sh
     # create a new Gatsby site using the default starter
-    npx gatsby new my-default-starter https://github.com/santosfrancisco/gatsby-starter-cv
+    npx gatsby new my-default-starter https://github.com/ajimenezdev/gatsby-cv
     ```
 
 1.  **Start developing.**
@@ -35,7 +31,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 
     ```sh
     cd my-default-starter/
-    npm run develop
+    yarn develop
     ```
 
 1.  **Open the source code and start editing!**
@@ -50,7 +46,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 
   That command will generate a production build on _public_ folder
   ```sh
-    npm run build
+    yarn build
   ```
 
 ## Configuration
@@ -64,95 +60,156 @@ Update the configuration file with your data. The configuration file is in ```da
 
 ```js
 module.exports = {
-  siteTitle: 'Francisco Santos',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
-  authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-  In 2012 I started working as a support technician and I approached the developers.
-  In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-  I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  siteTitle: "Hi! I'm Alvaro!",
+  siteDescription: `This is my personal website`,
+  keyWords: ['gatsbyjs', 'react', 'curriculum'],
+  authorName: 'Alvaro Jimenez',
+  twitterUsername: 'ajimenezdev',
+  githubUsername: 'ajimenezdev',
+  authorAvatar: '/images/avatar.jpg',
+  authorDescription: `I'm a full-stack JS developer, currently focused in React/React Native development and blockchain solutions.<br/><br/>
+  I worked in multiple stacks (React, AngularJs, .Net, Java, Android...), environments and types of companies (Startup, medium size and big corporate).<br/><br/>
+  I currently work remotely as a frontend developer and mainly working with <strong>Javascript, React/ReactNative, NodeJS and Blockchain.</strong>`,
   skills: [
     {
       name: 'HTML',
-      level: 70
+      level: 90,
     },
     {
       name: 'CSS',
-      level: 60
+      level: 85,
     },
     {
       name: 'Javascript',
-      level: 50
-    },
-    {
-      name: 'NodeJs',
-      level: 40
+      level: 90,
     },
     {
       name: 'React',
-      level: 60
-    },### 
+      level: 85,
+    },
+    {
+      name: 'ReactNative',
+      level: 80,
+    },
+    {
+      name: 'NodeJs',
+      level: 40,
+    },
     {
       name: 'Git',
-      level: 70
-    }
+      level: 75,
+    },
+    {
+      name: 'Bitcoin',
+      level: 30,
+    },
+    {
+      name: 'Ethereum & smartcontract',
+      level: 30,
+    },
   ],
   jobs: [
     {
-      company: "Lendico",
+      company: 'Lifelabs.io',
       begin: {
-        month: 'apr',
-        year: '2018'
+        month: 'may',
+        year: '2018',
       },
       duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
-  
-    }, {
-      company: "Anapro",
-      begin: {
-        month: 'dec',
-        year: '2016'
+      location: 'UK - Remote',
+      occupation: 'Lead Frontend Developer',
+      description:
+        'I joined the company as one of the main developers, leading the frontend and mobile app development and helping with the architecture and coordination of the backend and blokchain teams.',
+    },
+    /* ... */
+  ],
+  publications: [
+    {
+      title: 'React Native intermediate level',
+      company_medium: 'OpenWebinars',
+      date: {
+        month: 'jun',
+        year: '2019',
       },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
-    }, {
-      company: "Anapro",
-      begin: {
-        month: 'set',
-        year: '2012'
-      },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-  
+      link: 'https://openwebinars.net/cursos/react-native-intermedio/',
+      description:
+        'Online training recorded for spanish e-learning platform. The training is for developers who know a little bit of ReactNative and wants to learn more about the platform',
+    },
+    /* ... */
+  ],
+  education: [
+    {
+      school: 'University of Balearic Islands',
+      degree: 'Bachelor degree',
+      field: 'Software Engineering',
+      startYear: 2006,
+      endYear: 2011,
+    },
+  ],
+  languages: [
+    {
+      language: 'Spanish',
+      level: 'Native tongue',
+      code: 'ES',
+    },
+    {
+      language: 'English',
+      level: 'Fluid Written & Spoken',
+      code: 'GB',
     },
     /* ... */
   ],
   social: {
-    twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
+    twitter: 'https://twitter.com/ajimenezdev/',
+    linkedin: 'https://www.linkedin.com/in/alvarojimenezmartin/',
+    github: 'https://github.com/ajimenezdev/',
+    email: 'ajmjimens@gmail.com',
   },
-  siteUrl: 'https://santosfrancisco.github.io/gatsby-starter-cv',
+  hobbies: [
+    {
+      name: 'Football',
+      icon: 'FaFutbol',
+    },
+    /* ... */
+  ],
+  siteUrl: 'https://alvarojimenezmartin.com',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
   googleAnalyticsId: 'UA-000000000-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: 'src/assets/favicon.jpg',
+  resume: '/resume_alvaro_jimenez.pdf',
   headerLinks: [
+    // {
+    //   label: 'Alvaro Jimenez Martin',
+    //   url: '/',
+    // },
     {
-      label: 'Francisco Santos',
-      url: '/',
+      label: 'About',
+      url: 'about',
+    },
+    {
+      label: 'Skills',
+      url: 'skills',
+    },
+    {
+      label: 'Experience',
+      url: 'experience',
+    },
+    {
+      label: 'Publications',
+      url: 'publications',
+    },
+    {
+      label: 'Education',
+      url: 'education',
+    },
+    {
+      label: 'Hobbies',
+      url: 'hobbies',
     }
-  ]
+  ],
 }
-
 ```
