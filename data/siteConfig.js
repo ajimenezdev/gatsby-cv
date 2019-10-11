@@ -55,10 +55,10 @@ module.exports = {
         year: '2019',
       },
       duration: null,
-      location: 'UK - Remote',
-      occupation: 'Lead Frontend Developer',
+      location: 'Remote',
+      occupation: 'Mobile Engineer',
       description:
-        'I joined the company as one of the main developers, leading the frontend and mobile app development and helping with the architecture and coordination of the backend and blokchain teams.',
+        'Working mainly with ReactNative as part of the Mobile development team, handling any task related to improve or fix existing features and developing new ones.',
     },
     {
       company: 'Lifelabs.io',
@@ -229,7 +229,7 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/favicon.jpg',
+  icon: 'src/favicon.jpg',
   resume: '/resume_alvaro_jimenez.pdf',
   headerLinks: [
     // {
