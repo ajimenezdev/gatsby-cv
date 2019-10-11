@@ -49,12 +49,24 @@ module.exports = {
   ],
   jobs: [
     {
+      company: 'Bitfinex',
+      begin: {
+        month: 'oct',
+        year: '2019',
+      },
+      duration: null,
+      location: 'UK - Remote',
+      occupation: 'Lead Frontend Developer',
+      description:
+        'I joined the company as one of the main developers, leading the frontend and mobile app development and helping with the architecture and coordination of the backend and blokchain teams.',
+    },
+    {
       company: 'Lifelabs.io',
       begin: {
         month: 'may',
         year: '2018',
       },
-      duration: null,
+      duration: '1 years and 5 months',
       location: 'UK - Remote',
       occupation: 'Lead Frontend Developer',
       description:
@@ -90,7 +102,7 @@ module.exports = {
         month: 'oct',
         year: '2012',
       },
-      duration: '1 years',
+      duration: '1 year',
       location: 'Majorca, Spain',
       occupation: 'Software developer',
       description:
