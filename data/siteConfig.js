@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       name: 'ReactNative',
-      level: 80,
+      level: 85,
     },
     {
       name: 'NodeJs',
@@ -58,7 +58,7 @@ module.exports = {
       location: 'Remote',
       occupation: 'Mobile Engineer',
       description:
-        'Working mainly with ReactNative as part of the Mobile development team, handling any task related to improve or fix existing features and developing new ones.',
+        'Working providing services for the development of their mobile app using ReactNative, with the goal of providing a complete, fast and smooth Cryptocurrency exchange application.',
     },
     {
       company: 'Lifelabs.io',
