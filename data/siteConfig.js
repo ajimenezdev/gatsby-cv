@@ -6,9 +6,9 @@ module.exports = {
   twitterUsername: 'ajimenezdev',
   githubUsername: 'ajimenezdev',
   authorAvatar: '/images/avatar.jpg',
-  authorDescription: `I'm a full-stack JS developer, currently focused in React/React Native development and blockchain solutions.<br/><br/>
-  I worked in multiple stacks (React, AngularJs, .Net, Java, Android...), environments and types of companies (Startup, medium size and big corporate).<br/><br/>
-  I currently work remotely as a frontend developer and mainly working with <strong>Javascript, React/ReactNative, NodeJS and Blockchain.</strong>`,
+  authorDescription: `I'm a full-stack JS developer, I specialize in React/React Native and blockchain solutions. With previous experience in a variety of stacks, including React, AngularJs, .Net, Java, and Android, I am well-equipped to handle a range of development challenges.<br/><br/>
+  In my current role as a remote frontend developer, I focus on Javascript, React/ReactNative and NodeJS technologies. I have worked with startups, medium-sized companies, and large corporations, giving me a diverse range of experience in different environments.<br/><br/>
+  Overall, I am committed to delivering high-quality, reliable solutions that meet the needs of my clients. Whether it's building a new feature, fixing a bug, or anything in between, I have the skills and expertise to handle it.`,
   skills: [
     {
       name: 'HTML',
@@ -49,16 +49,28 @@ module.exports = {
   ],
   jobs: [
     {
-      company: 'Bitfinex',
+      company: 'Meta',
       begin: {
-        month: 'oct',
-        year: '2019',
+        month: 'may',
+        year: '2022',
       },
       duration: null,
       location: 'Remote',
       occupation: 'Mobile Engineer',
       description:
-        'Working providing services for the development of their mobile app using ReactNative, with the goal of providing a complete, fast and smooth Cryptocurrency exchange application.',
+        '',
+    },
+    {
+      company: 'Bitfinex',
+      begin: {
+        month: 'oct',
+        year: '2019',
+      },
+      duration: '2 years and 7 months',
+      location: 'Remote',
+      occupation: 'Mobile Engineer',
+      description:
+        'As a member of the mobile development team, I specialize in ReactNative and handle a range of tasks, from improving and fixing existing features to developing new ones. My focus is on delivering high-quality, reliable solutions that meet the needs of our users.',
     },
     {
       company: 'Lifelabs.io',
@@ -70,7 +82,7 @@ module.exports = {
       location: 'UK - Remote',
       occupation: 'Lead Frontend Developer',
       description:
-        'I joined the company as one of the main developers, leading the frontend and mobile app development and helping with the architecture and coordination of the backend and blokchain teams.',
+        'As the lead developer for the company, I was responsible for leading frontend and mobile app development, as well as providing assistance with the architecture and coordination of the backend and blockchain teams. I was committed to delivering high-quality solutions and working collaboratively with my colleagues to achieve our shared goals.',
     },
     {
       company: 'Flipper',
@@ -82,7 +94,7 @@ module.exports = {
       location: 'London, UK',
       occupation: 'Senior Developer',
       description:
-        'I joined the company as one of the first 5 employees, I have been involved in all technical areas (backend, frontend, db, devops, bi) but with a higher responsibility on frontend, which I was leading inside the team',
+        'As one of the first five employees of the company, I have been heavily involved in all technical areas, including backend, frontend, database, devops, and BI. My primary focus has been on frontend development, where I have taken on a leadership role within the team.',
     },
     {
       company: 'Radisson Blu Edwardian London',
@@ -94,7 +106,7 @@ module.exports = {
       location: 'London, UK',
       occupation: 'Software developer',
       description:
-        'Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool.',
+        ' I was responsible for developing responsive web applications to support various business areas within the company. In addition to creating new applications, I also maintained and supported the existing catalog of applications. As part of my job, I continuously learned about how the business operates in order to apply that knowledge to my work and propose ways to improve the existing system.',
     },
     {
       company: 'HotelBeds',
@@ -106,7 +118,7 @@ module.exports = {
       location: 'Majorca, Spain',
       occupation: 'Software developer',
       description:
-        'Member of a team in charge to create a new website to sell complementary holidays tickets and excursions, integrated inside the existing booking engine.',
+        'As a member of a team tasked with creating a new website for selling complementary holiday tickets and excursions, I was responsible for integrating the new site into the existing booking engine.',
     },
     {
       company: 'Brujula',
@@ -118,7 +130,7 @@ module.exports = {
       location: 'Majorca, Spain',
       occupation: 'Junior developer',
       description:
-        'Working in a team for a third party company as a development house, in charge of their intranet site to manage all the information about new customers, employees, keep the stock up to date and some other small applications.',
+        'As part of a development team working for a third-party company, I was responsible for managing their intranet site. This included tasks such as maintaining information about new customers and employees, keeping the stock up to date, and developing small applications. I worked closely with my team members and the client to ensure that our solutions met their needs and delivered the desired results.',
     },
     {
       company: 'Bizzit',
@@ -130,7 +142,7 @@ module.exports = {
       location: 'Majorca, Spain',
       occupation: 'Intern developer',
       description:
-        'Summer internship, Working with the company intranet site, creating new features and fixing some of the existing bugs.',
+        'In my second summer internship, I continued working on the same elements from the previous year, extending existing features and completing new ones. This experience allowed me to build on the skills and knowledge that I gained during my first internship and continue to grow as a developer.',
     },
     {
       company: 'Bizzit',
@@ -142,7 +154,7 @@ module.exports = {
       location: 'Majorca, Spain',
       occupation: 'Intern developer',
       description:
-        'Summer internship, Working with the company intranet site, creating new features and fixing some of the existing bugs.',
+        'During my summer internship, I worked on the company\'s intranet site, developing new features and fixing existing bugs. I was able to gain valuable experience in software development and work closely with my team members to learn from more experienced people. Overall, the internship was a great opportunity for me to learn and grow as a developer.',
     },
   ],
   publications: [
